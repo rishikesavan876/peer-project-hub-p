@@ -20,7 +20,7 @@ import NotFound from './pages/NotFound';
 function App() {
   return (
     <AuthProvider>
-      <BrowserRouter>
+      <BrowserRouter basename="/peer-project-hub-p">
         <div className="min-h-screen bg-slate-50 text-slate-800 flex flex-col">
           <Navbar />
           <main className="flex-1 w-full max-w-6xl mx-auto px-4 py-6">
