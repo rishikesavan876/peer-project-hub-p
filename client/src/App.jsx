@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import { AuthProvider } from './context/AuthProvider';
 import ProtectedRoute from './components/ProtectedRoute';
 import RoleRoute from './components/RoleRoute';
@@ -20,7 +20,7 @@ import NotFound from './pages/NotFound';
 function App() {
   return (
     <AuthProvider>
-      <BrowserRouter basename="/peer-project-hub-p">
+      <>
         <div className="min-h-screen bg-slate-50 text-slate-800 flex flex-col">
           <Navbar />
           <main className="flex-1 w-full max-w-6xl mx-auto px-4 py-6">
@@ -72,7 +72,7 @@ function App() {
             Peer Project Hub &middot; Built with MERN + Firebase
           </footer>
         </div>
-      </BrowserRouter>
+      </>
     </AuthProvider>
   );
 }
